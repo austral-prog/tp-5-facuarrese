@@ -1,10 +1,21 @@
-# Replace the "ANSWER HERE" for your answer
-
 def max_of_two(x, y):
     """Given x and y, that are 2 numbers, return the biggest number."""
-    return "ANSWER HERE" # Remove this line and implement
-
+    if x > y:
+        return x
+    else:
+        return y
 
 def max_of_three(x, y, z):
     """Given x, y and z, that are 3 numbers, return the biggest number of the three."""
-    return "ANSWER HERE" # Remove this line and implement
+    if x > y and y > z:
+        return x
+    elif y > z:
+        return y
+    else:
+        return z
+
+y = input("ingrese el primer valor: ")
+x = input("ingrese el segundo valor: ")
+z = input("ingrese el tercer valor: ")
+print(max_of_two(x, y))
+print (max_of_three(x, y, z))
